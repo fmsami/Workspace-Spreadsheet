@@ -8,7 +8,7 @@ function include(filename){
 }
 
 function processForm(formObject){
-  var url=" ";
+  var url="https://docs.google.com/spreadsheets/d/1wp0KD375txaSoYxfXGrsTyglQgzam7sUcWUHYtdIdgA/edit#gid=0";
   var ss= SpreadsheetApp.openByUrl(url);
   var ws=ss.getSheetByName("Data");
 
@@ -18,6 +18,8 @@ function processForm(formObject){
     formObject.business_name,
     formObject.email,
     formObject.phone,
+    formObject.appointment_date,
+    formObject.day,
     formObject.appointment_time,
     formObject.address,
     formObject.recording
